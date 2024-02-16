@@ -1,0 +1,23 @@
+.card-img-top
+{
+  height:30vh;
+  z-index: 0;
+}
+.card{
+  background-color: rgba(211, 228, 243, 0.692);
+  padding: 5px;
+  border: none;
+}
+.discount{
+  width: fit-content;
+  position: absolute;
+  padding: 2px;
+  float: right;
+  background-color: rgb(250, 235, 33);
+  color: rgb(245, 48, 22);
+  z-index: 1;
+  font-weight: bold;
+}
+.card:hover{
+  box-shadow: 2px 3px 20px rgb(163, 163, 163);
+}

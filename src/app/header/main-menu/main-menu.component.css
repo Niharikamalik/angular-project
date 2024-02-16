@@ -1,0 +1,20 @@
+.edu-logo{
+  color : rgb(17, 16, 16);
+}
+.container{
+  width: 100vh;
+}
+
+.navbar-brand{
+  margin: 10px;
+  font-size: 25px;
+}
+.edu--bottom--bar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.edu-menu>a{
+   margin: 15px;
+   color: black;
+}

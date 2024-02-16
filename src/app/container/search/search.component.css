@@ -1,0 +1,19 @@
+.edu-search{
+  width: 40%;
+  display: flex;
+  margin : 2% 40%;
+}
+input{
+  border-radius: 20px 0px 0px 20px;
+}
+.btn{
+  border-radius: 0 20px 20px 0px;
+}
+.btn-search{
+  background-color: black;
+  color: aliceblue;
+
+}
+.btn-search-disable{
+  background-color: rgb(96, 99, 98);
+}

@@ -1,0 +1,10 @@
+<div class="edu-search">
+  <input  class="form-control" type="text" [(ngModel)]="searchText">
+  <button [ngClass]="{'btn':true , 'btn-search':searchText , 'btn-search-disable': !searchText}" [disabled]="!searchText">Search</button>
+</div>
+<div *ngIf="searchText!=''">
+  <p>
+    <strong>Search Result : </strong>
+    {{searchText}}
+  </p>
+  </div>

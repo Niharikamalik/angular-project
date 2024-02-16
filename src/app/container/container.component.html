@@ -1,0 +1,41 @@
+<!-- <div class="edu-card card">
+  <img class="card-img" [src] = "product.pimage">
+  <div class="card-body">
+    <p class="card-title h4">{{product.name}}</p>
+    <div class="card-text ">
+      <p>Price : {{'Rs ' +product.price}}</p>
+      <p>color : {{product.color}}</p>
+
+      <p>Discounted price : {{ product.price -  product.discount}}</p>
+      <p>Save up to  : {{"Rs "+ getSaveMoney()}}</p>
+      <p>Availability :
+        {{product.inStock >0? "Only " + product.inStock +" items left in stock ": "Not in Stock" }}</p>
+        Bye Now
+    </div>
+    <div>
+      <button
+      class="btn btn-warning"
+      [disabled]=" product.inStock <= 0">Bye Now
+    </button>
+    </div>
+    <div>
+      <button class="btn btn-success" (click)="incrementCount()" [disabled]="addToCard==product.inStock">+</button>
+      <span>{{addToCard}}</span>
+      <button class="btn btn-danger"(click)="decrementCount()" [disabled]="addToCard==0">-</button>
+    </div>
+    item number
+
+  </div>
+
+  <input (input)="onNameChange($event)" >
+  <p>name : {{name}}</p>
+</div> -->
+<div class="container">
+  <app-search></app-search>
+  <!-- <div *ngFor="let item of [1,23,4,5,6,]">
+    <p>
+      {{item}}
+    </p> -->
+  <!-- </div> -->
+  <app-product-list></app-product-list>
+</div>

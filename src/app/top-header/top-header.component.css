@@ -1,0 +1,7 @@
+
+.edu--top--bar , .edu--top--bar>a {
+  display: flex;
+  justify-content: right;
+  color: aliceblue;
+  font-size: small;
+}
