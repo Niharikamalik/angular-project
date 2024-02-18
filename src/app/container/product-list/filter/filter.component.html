@@ -1,0 +1,17 @@
+<!-- <p>filter works!</p> -->
+<div class="filter-container">
+  <span class="filter">Filter :</span>
+  <div>
+    <input type="radio" name="filter" value="all"  class="form-check-input" [(ngModel)]="selectedFilterButton">
+    <span>All {{ "( "+all + " )"}}</span>
+  </div>
+  <div>
+    <input type="radio" name="filter" value="true"  class="form-check-input" [(ngModel)]="selectedFilterButton">
+    <span>In Stock {{"( "+instock + " )"}}</span>
+  </div>
+  <div>
+    <input type="radio" name="filter" value="false"  class="form-check-input"
+    [(ngModel)]="selectedFilterButton">
+    <span>Out of Stock {{ "( "+outOfStock +" )"}}</span>
+  </div>
+</div>

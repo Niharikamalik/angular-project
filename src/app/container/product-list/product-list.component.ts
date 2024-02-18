@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { producerNotifyConsumers } from '@angular/core/primitives/signals';
+import { FilterComponent } from './filter/filter.component';
 import { ProductComponent } from './product/product.component';
 
 @Component({
@@ -9,6 +10,7 @@ import { ProductComponent } from './product/product.component';
   imports: [
     CommonModule,
     ProductComponent,
+    FilterComponent,
   ],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
@@ -540,4 +542,7 @@ export class ProductListComponent {
       slug: "michael-feburary-sk8-hi"
     }
   ];
+  totalProductCount = this.products.length;
+  totalProductInStock = this.products.filter(p => p.is_in_inventory===true ).length;
+  totalProductOutofStock = this.products.filter(p=>p.is_in_inventory === false).length
 }

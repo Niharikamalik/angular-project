@@ -1,17 +1,16 @@
-<p>product works!</p>
-<!-- <div class="edu-product-item col" >
+<div class="edu-product-item col" >
   <div class="card h-100">
     <div>
-      <div class="discount" *ngIf="item.discountPrice">{{(100-(item.discountPrice/item.price*100)).toFixed(0) +'% OFF'}}</div>
-      <img class="card-img-top" [src]="item.imageURL" alt="image">
+      <div class="discount" *ngIf="product.discountPrice">{{(100-(product.discountPrice/product.price*100)).toFixed(0) +'% OFF'}}</div>
+      <img class="card-img-top" [src]="product.imageURL" alt="image">
     </div>
     <div class="card-body ">
-      <div class="card-text h4">{{ "$"+item.price}}</div>
-      <div class="card-title h6">{{item.name}}</div>
-      <div class="card-text">Brand : {{item.brand}}</div>
-      <div class="card-text">Category : {{item.category}}</div>
-      <div>Color option : {{item.color.length}}</div>
-      <div [ngStyle]="{fontWeight : 'bold',color : item.is_in_inventory?'green':'red',}">{{item.is_in_inventory? 'available in stock':'Out of stock'}}</div>
+      <div class="card-text h4">{{ "$"+product.price}}</div>
+      <div class="card-title h6">{{product.name}}</div>
+      <div class="card-text">Brand : {{product.brand}}</div>
+      <div class="card-text">Category : {{product.category}}</div>
+      <div>Color option : {{product.color.length}}</div>
+      <div [ngStyle]="{fontWeight : 'bold',color : product.is_in_inventory?'green':'red',}">{{product.is_in_inventory? 'available in stock':'Out of stock'}}</div>
     </div>
   </div>
-</div> -->
+</div>
